@@ -6,8 +6,8 @@ namespace Lecture32_Strings
     {
         static void Main()
         {
-            var firstName = "Michael";
-            var lastName = "Miles";
+            const string firstName = "Michael";
+            const string lastName = "Miles";
 
             string fullName = $"My name is {firstName} {lastName}";
 
@@ -15,11 +15,10 @@ namespace Lecture32_Strings
             var formattedNames = string.Join(",", names);
             Console.WriteLine(formattedNames);
 
-            var text =
-                "Hi John\nLook into the following paths\n\nc:\\folder1\\folder2\nc:\\folder1\\folder2\\folder3\\folder4";
+            const string text = "Hi John\nLook into the following paths\n\nc:\\folder1\\folder2\nc:\\folder1\\folder2\\folder3\\folder4";
             Console.WriteLine(text);
 
-            var text2 = @"Hi John
+            const string text2 = @"Hi John
 Look into the following paths
 
 c:\folder1\folder2
