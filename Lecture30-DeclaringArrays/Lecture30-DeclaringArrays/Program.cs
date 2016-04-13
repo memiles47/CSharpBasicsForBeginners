@@ -23,8 +23,6 @@ namespace Lecture30_DeclaringArrays
             var names = new string[3] {"Jack", "John", "Mary"};
 
             Console.WriteLine(names[0]);
-            Console.WriteLine(names[1]);
-            Console.WriteLine(names[2]);
         }
     }
 }
