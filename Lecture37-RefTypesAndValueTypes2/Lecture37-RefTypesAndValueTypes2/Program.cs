@@ -2,22 +2,22 @@
 
 namespace Lecture37_RefTypesAndValueTypes2
 {
-    class Program
+    internal class Program
     {
         public class Person
         {
-            public int age;
+            public int Age;
         }
 
-        static void Main(string[] args)
+        private static void Main()
         {
-            var number = 1;
+            const int number = 1;
             Increment(number);
             Console.WriteLine($"number: {number}");
 
-            Person person = new Person {age = 20};
+            var person = new Person {Age = 20};
             MakeOld(person);
-            Console.WriteLine($"person.age: {person.age}");
+            Console.WriteLine($"person.age: {person.Age}");
         }
 
         public static void Increment(int number)
@@ -27,7 +27,7 @@ namespace Lecture37_RefTypesAndValueTypes2
 
         public static void MakeOld(Person person)
         {
-            person.age += 10;
+            person.Age += 10;
         }
     }
 }
