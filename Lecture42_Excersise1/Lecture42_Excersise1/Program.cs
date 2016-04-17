@@ -4,19 +4,14 @@ namespace Lecture42_Excersise1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.Write($"Please input a number then press <ENTER>");
             string inputNumber = Console.ReadLine();
 
-            if (int.Parse(inputNumber) >= 1 && int.Parse(inputNumber) <= 10)
-            {
-                Console.WriteLine($"Input Nubmer is Valid");
-            }
-            else
-            {
-                Console.WriteLine($"Input Number is not valid");
-            }
+            Console.WriteLine(Convert.ToInt32(inputNumber) >= 1 && Convert.ToInt32(inputNumber) <= 10
+                ? $"Input Number is Valid"
+                : $"Input Number is Not Valid");
         }
     }
 }

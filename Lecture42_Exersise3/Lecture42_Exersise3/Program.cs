@@ -12,8 +12,8 @@ namespace Lecture42_Exersise3
             Console.Write($"Enter the document length: ");
             var stringLength = Console.ReadLine();
 
-            var width = double.Parse(stringWidth);
-            var length = double.Parse(stringLength);
+            var width = Convert.ToDouble(stringWidth);
+            var length = Convert.ToDouble(stringLength);
 
             Console.WriteLine(width <= length
                 ? $"\nThe document is displayed in portrait format"
