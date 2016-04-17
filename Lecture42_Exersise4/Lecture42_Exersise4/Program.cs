@@ -4,30 +4,25 @@ namespace Lecture42_Exersise4
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            const int perKphDemerits = 5;
+
             Console.Write($"Enter the Speed Limit: ");
-            var stringSpeedLimit = Console.ReadLine();
+            var speedLimit = Convert.ToInt32(Console.ReadLine());
 
             Console.Write($"Enter the Speed of the vehicle: ");
-            var stringVehicleSpeed = Console.ReadLine();
+            var vehicleSpeed = Convert.ToInt32(Console.ReadLine());
 
-            var speedLimit = int.Parse(stringSpeedLimit);
-            var vehicleSpeed = int.Parse(stringVehicleSpeed);
-
-            var demerits = (vehicleSpeed - speedLimit) / 5;
+            var demerits = (vehicleSpeed - speedLimit) / perKphDemerits;
 
             if (vehicleSpeed <= speedLimit)
             {
                 Console.WriteLine($"Ok");
             }
-            else if (demerits <= 12)
-            {
-                Console.WriteLine($"\nDemerits = {demerits}");
-            }
             else
             {
-                Console.WriteLine($"\nLicense suspended");
+                Console.WriteLine(demerits <= 12 ? $"Demerits = {demerits}" : $"License Suspended");
             }
         }
     }
