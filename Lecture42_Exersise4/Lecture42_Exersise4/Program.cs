@@ -21,7 +21,7 @@ namespace Lecture42_Exersise4
             {
                 Console.WriteLine($"Ok");
             }
-            else if (demerits < 12)
+            else if (demerits <= 12)
             {
                 Console.WriteLine($"\nDemerits = {demerits}");
             }
