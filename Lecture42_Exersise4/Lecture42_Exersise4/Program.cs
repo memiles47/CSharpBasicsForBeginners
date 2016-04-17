@@ -17,9 +17,7 @@ namespace Lecture42_Exersise4
             var demerits = (vehicleSpeed - speedLimit) / perKphDemerits;
 
             if (vehicleSpeed <= speedLimit)
-            {
                 Console.WriteLine($"Ok");
-            }
             else
             {
                 Console.WriteLine(demerits <= 12 ? $"Demerits = {demerits}" : $"License Suspended");
