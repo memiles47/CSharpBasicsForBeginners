@@ -13,7 +13,12 @@ namespace Lecture48_Exersise5
 
             var max = Convert.ToInt32(numbers[0]);
 
-            Console.WriteLine($"{numbers.Length}");
+            foreach (var item in numbers)
+            {
+                if (Convert.ToInt32(item) > max)
+                    max = Convert.ToInt32(item);
+            }
+            Console.WriteLine($"The Maximum Value is: {max}");
         }
     }
 }
