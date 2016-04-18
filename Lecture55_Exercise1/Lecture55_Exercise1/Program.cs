@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 
 namespace Lecture55_Exercise1
 {
@@ -15,24 +14,28 @@ namespace Lecture55_Exercise1
                 Console.Write($"Friends name: ");
                 var fbFriend = Console.ReadLine();
 
+                if (fbFriend == "")
+                    break;
+
+                Console.Clear();
                 friends.Add(fbFriend);
 
                 switch (friends.Count)
                 {
                     case 1:
-                        Console.WriteLine($"Friend One: {friends[0]}");
+                        Console.WriteLine($"{friends[0]} likes your post.");
                         break;
-
                     case 2:
-                        Console.WriteLine($"A Second Friend: {friends[1]}");
+                        Console.WriteLine($"{friends[0]} and {friends[1]} like your post.");
                         break;
-
+                    case 3:
+                        Console.WriteLine($"{friends[0]}, {friends[1]} and 1 other person likes your post.");
+                        break;
                     default:
-                        Console.WriteLine($"A New Friend: {friends[friends.Count - 1]}");
+                        Console.WriteLine(
+                            $"{friends[0]}, {friends[1]} and {friends.Count - 2} other people like your post.");
                         break;
                 }
-                foreach(var name in friends)
-                    Console.WriteLine(name);
             }
         }
     }
