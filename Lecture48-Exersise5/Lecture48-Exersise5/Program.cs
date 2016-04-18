@@ -7,7 +7,7 @@ namespace Lecture48_Exersise5
         static void Main()
         {
             Console.Write($"Enter a series of numbers separated by a comma: ");
-            var userInput = Console.ReadLine();
+            var userInput = Console.ReadLine() ?? "";
 
             var numbers = userInput.Split(',');
 
