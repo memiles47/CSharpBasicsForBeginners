@@ -8,7 +8,7 @@ namespace Lecture55_Exercise5
     {
         static void Main()
         {
-            List<int> numbersList;
+            List<int> numbersList; //Check out this declaration
 
             while (true)
             {
