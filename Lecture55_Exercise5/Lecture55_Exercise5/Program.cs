@@ -12,7 +12,7 @@ namespace Lecture55_Exercise5
 
             while (true)
             {
-                Console.WriteLine($"Please enter a list of comma separated values (e.g. 1, 2, 3, ...)");
+                Console.WriteLine("Please enter a list of comma separated values (e.g. 1, 2, 3, ...)");
                 var input = Console.ReadLine() ?? "";
                 var cleanInput = input.Replace(" ", "");
 
@@ -26,16 +26,21 @@ namespace Lecture55_Exercise5
                     }
                 }
 
-                Console.WriteLine($"Invalid entry retry");
-                Console.Write($"Press <ENTER> to continue... ");
-                Console.ReadLine();
-                Console.Clear();
+                ClearScreen();
             }
 
             numbersList.Sort();
-            Console.WriteLine($"The three smallest numbers are: ");
+            Console.WriteLine("The three smallest numbers are: ");
             for (var i = 0; i < 3; i++)
                 Console.WriteLine($"Number {i + 1}: {numbersList[i]}");
+        }
+
+        static void ClearScreen()
+        {
+            Console.WriteLine("Invalid entry retry");
+            Console.Write("Press <ENTER> to continue... ");
+            Console.ReadLine();
+            Console.Clear();
         }
     }
 }
