@@ -7,19 +7,20 @@ namespace Lecture67_Exercies4
     {
         static void Main()
         {
-            //var words = "my nEw vaRiaBle";
-            //var varible = words.Split(' ');
-            var testWord = "miCHaEl";
+            Console.Write("Please enter a few words: ");
+            var input = Console.ReadLine()?.ToLower() ?? "";
 
+            var variable = input.Split(' ');
 
-            var bldrVariableName = new StringBuilder();
+            var variableName = new StringBuilder();
 
-            bldrVariableName.Append((testWord[0].ToString().ToUpper()))
-                .Append(testWord.Substring(1).ToLower());
+            foreach (var word in variable)
+            {
+                variableName.Append(word[0].ToString().Substring(0, 1).ToUpper())
+                            .Append(word.Substring(1));
+            }
 
-            Console.WriteLine($"New word: {bldrVariableName}");
-
-
+            Console.WriteLine($"\nVariable Name: {variableName}\n");
         }
     }
 }
