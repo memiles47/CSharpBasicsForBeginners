@@ -1,24 +1,18 @@
 ﻿using System;
+using System.Linq;
 
-namespace Lecture67_Exercise5
+namespace Lecture67_Exercise5a
 {
     class Program
     {
         static void Main()
         {
             const string vowels = "aeiou";
-            var count = 0;
 
             Console.Write("Please enter a word: ");
             var input = Console.ReadLine()?.ToLower() ?? "";
 
-            foreach (var c in input)
-            {
-                if (vowels.Contains(Convert.ToString(c)))
-                {
-                    count++;
-                }
-            }
+            var count = input.Count(c => vowels.Contains(Convert.ToString(c)));
 
             Console.WriteLine($"\nThere are {count} vowels in your word.");
         }
