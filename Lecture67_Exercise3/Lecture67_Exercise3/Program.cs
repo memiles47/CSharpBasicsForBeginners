@@ -7,7 +7,7 @@ namespace Lecture67_Exercise3
         static void Main()
         {
             Console.Write("Please enter a time in 12hr format e.g. 19:50");
-            var timeInput = Console.ReadLine() ?? "";
+            var timeInput = Console.ReadLine() ?? "" ;
 
             var timeArray = timeInput.Split(':');
         }
