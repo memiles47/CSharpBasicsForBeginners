@@ -10,6 +10,7 @@ namespace Lecture67_Exercise3
             var timeInput = Console.ReadLine() ?? "" ;
 
             var timeArray = timeInput.Split(':');
+            var dateTime = new DateTime();
         }
     }
 }
