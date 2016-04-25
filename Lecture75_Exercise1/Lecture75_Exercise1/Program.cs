@@ -8,7 +8,6 @@ namespace Lecture75_Exercise1
         static void Main()
         {
             var path = @"C:/Users/Michael/Data/TextDocument.txt";
-
             Console.WriteLine($"The number of words in the text file is: {NumberOfWords(path)}");
         }
 
