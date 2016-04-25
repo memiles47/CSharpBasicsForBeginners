@@ -1,6 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/*
+ * His solution checks to see if the numbers when sorted are consecutive
+ * regardless of the order entered.
+ * 
+ * My solution checks to see if the order, as entered are consecutive
+ * or not. I think my solution is how the instructions are written.
+ * 
+ * His solution is exactly how I was going to do it at first.
+ * 
+ */
+
 namespace Lecture67_Exercise1
 {
     class Program
