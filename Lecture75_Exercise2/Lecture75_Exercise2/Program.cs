@@ -15,10 +15,9 @@ namespace Lecture75_Exercise2
         {
             var wordString = File.ReadAllText(path);
             var cleanString = wordString.Replace(".", "");
-            var words = cleanString.Split(' ');
-            var max = words[0].Length;
+            var max = 1;
 
-            foreach (var word in words)
+            foreach (var word in cleanString.Split(' '))
             {
                 if (word.Length > max) max = word.Length;
             }
