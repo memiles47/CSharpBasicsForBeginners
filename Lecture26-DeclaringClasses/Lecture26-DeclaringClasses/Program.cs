@@ -3,7 +3,7 @@ using Lecture26_DeclaringClasses.Math;
 
 namespace Lecture26_DeclaringClasses
 {
-    //This next six months is going to drive me insane.
+    //Windows 10 applications in C# is my next book to read.
     internal class Program
     {
         private static void Main()
